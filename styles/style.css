@@ -17,4 +17,41 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font-family), Arial, monospace;
+  font-variation-settings: 400;
+  padding-block: 100px;
+  background-color: var(--main-color);
+  color: var(--acent-color);
+}
+
+.header {
+}
+.title__container {
+}
+
+.title,
+.subtitle,
+.theme-menu__button {
+  font-family: var(--accent-font-family), Arial, monospace;
+  font-weight: 400;
+  color: var(--acent-color);
+}
+
+.theme-menu {
+}
+.header__theme-menu {
+}
+.theme-menu__list {
+  display: grid;
+
+}
+.theme-menu__item {
+}
+.theme-menu__button {
+  background-color: transparent;
+border: none;
+}
+.w-6 {
+}
+.h-6 {
 }
