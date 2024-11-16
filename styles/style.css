@@ -21,7 +21,8 @@
   font-variation-settings: 400;
   padding-block: 100px;
   background-color: var(--main-color);
-  color: var(--acent-color);
+  color: var(--accent-color);
+  background-image: var(--background-gradient);
 }
 
 .header {
