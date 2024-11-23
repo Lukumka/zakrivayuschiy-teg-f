@@ -38,20 +38,25 @@
 }
 
 @media (prefers-color-scheme: light) {
-    :root.theme-auto{
-    --main-color: #fff;
-    --accent-color: #000;
-    --stripe-color: #d3d3d3;
-    --first-gradient-color: #e7e7e7;
-    --second-gradient-color: #1a1a1a;
-    --background-gradient: repeating-linear-gradient(to left,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(to bottom,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
-    linear-gradient(to bottom, var(--first-gradient-color) 100%, var(--second-gradient-color) 0.01%);
+    :root.theme-auto {
+        --main-color: #fff;
+        --accent-color: #000;
+        --stripe-color: #d3d3d3;
+        --first-gradient-color: #e7e7e7;
+        --second-gradient-color: #1a1a1a;
+        --background-gradient: repeating-linear-gradient(to left,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(to bottom,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
+        linear-gradient(to bottom, var(--first-gradient-color) 100%, var(--second-gradient-color) 0.01%);
+        --blend-mode-hover: normal;
+        --blend-mode-item: difference;
+        --main-heart-color: #FF0000;
+        --dark-heart-color: #000;
+        --light-heart-color: #fff;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    :root.theme-auto{
+    :root.theme-auto {
         --main-color: #000;
         --accent-color: #00CC14;
         --stripe-color: #000;
@@ -60,5 +65,10 @@
         --background-gradient: repeating-linear-gradient(to left,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(to bottom,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
         linear-gradient(to bottom, var(--first-gradient-color), var(--second-gradient-color));
+        --blend-mode-hover: exclusion;
+        --blend-mode-item: normal;
+        --main-heart-color: #FF0000;
+        --dark-heart-color: #00CC14;
+        --light-heart-color: #000;
     }
 }
