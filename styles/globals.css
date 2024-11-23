@@ -45,6 +45,13 @@ ol {
   list-style: none;
 }
 
+dialog {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -54,3 +61,7 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* *:focus-visible{
+  background-color: aqua;
+} */

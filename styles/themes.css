@@ -14,7 +14,11 @@
     --background-gradient: repeating-linear-gradient(to left,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(to bottom,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
     linear-gradient(to bottom, var(--first-gradient-color) 100%, var(--second-gradient-color) 0.01%);
-    --blend-mode: difference;
+    --blend-mode-hover: normal;
+    --blend-mode-item: difference;
+    --main-heart-color: #FF0000;
+    --dark-heart-color: #000;
+    --light-heart-color: #fff;
 }
 
 :root.theme-dark{
@@ -26,7 +30,11 @@
     --background-gradient: repeating-linear-gradient(to left,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(to bottom,var(--stripe-color) 0,var(--stripe-color) 2px, transparent 2px, transparent 4px),
     linear-gradient(to bottom, var(--first-gradient-color), var(--second-gradient-color));
-    --blend-mode: normal;
+    --blend-mode-hover: exclusion;
+    --blend-mode-item: normal;
+    --main-heart-color: #FF0000;
+    --dark-heart-color: #00CC14;
+    --light-heart-color: #000;
 }
 
 @media (prefers-color-scheme: light) {

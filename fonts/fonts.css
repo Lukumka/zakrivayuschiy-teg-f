@@ -8,6 +8,8 @@
   @font-face {
     font-display: swap;
     font-family: 'Inter';
+    font-weight: 400 800;
+    font-stretch: 75% 200%;
     src:
       local('Inter'),
       url('Inter-Variable.woff2') format('woff2 supports variations'),

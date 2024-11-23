@@ -5,8 +5,6 @@
     --main-color: #000;
     --accent-color: #00CC14;
     --outline-style: 2px solid var(--accent-color);
-    --main-heart-color: #FF0000;
-    --dark-heart-color: #000;
-    --light-heart-color: #fff;
+    --backdrop-color: #000;
 }
  
