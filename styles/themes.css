@@ -19,7 +19,7 @@
     --main-heart-color: #FF0000;
     --dark-heart-color: #000;
     --light-heart-color: #fff;
-    --button-item-color: var(var(--main-color));
+    --button-item-color: var(--main-color);
     --text-font-width: 400;
     --title-font-width: 700;
 }
@@ -38,7 +38,7 @@
     --main-heart-color: #FF0000;
     --dark-heart-color: #00CC14;
     --light-heart-color: #000;
-    --button-item-color: var(var(--accent-color));
+    --button-item-color: var(--accent-color);
     --text-font-width: 465;
     --title-font-width: 785;
 }

@@ -15,7 +15,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   inline-size: 100vw;
-  max-inline-size: 700px;
+  max-inline-size: 704px;
   margin: 0 auto;
   font-family: var(--main-font-family), Arial, monospace;
   font-variation-settings: var(--text-font-width);
@@ -35,7 +35,7 @@
 .title,
 .subtitle,
 .theme-menu__button {
-  font-family: var(--accent-font-family), Arial, monospace;
+  font-family: var(--accent-font-family), fantasy, monospace;
   font-weight: 400;
   color: var(--acent-color);
   text-transform: uppercase;
@@ -73,7 +73,7 @@
 }
 
 .theme-menu__button:disabled::before {
-  font-family: var(--accent-font-family), Arial, monospace;
+  font-family: var(--accent-font-family), fantasy, monospace;
   content: "▶";
   color: currentColor;
   position: absolute;
@@ -129,7 +129,7 @@
 .cards__list {
   margin-block-start: 101px;
   display: grid;
-  gap: 50px;
+  gap: 47px;
 }
 
 .card__item {
@@ -139,27 +139,36 @@
 
 .card {
   display: grid;
-  border: var(--outline-style);
+  border-block: var(--outline-style);
 }
 
 .card-title {
   font-size: 18px;
   font-variation-settings: var(--title-font-width);
   line-height: 21.78px;
-  margin: auto;
   width: 100%;
   padding-inline: 10px;
   padding-block: 5px;
-  border-block-end: var(--outline-style);
+  border-inline: var(--outline-style);
 }
 
 .card__image-container {
   position: relative;
-  max-block-size: 696px;
+  background-color: aquamarine;
+  border-inline: var(--outline-style);
+
 }
 
-.card-image{
-  object-fit: cover;
+/* .card-image{
+  object-fit: fill;
+  inline-size: 100%;
+  border: var(--outline-style);
+} */
+
+.card-image {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
 }
 
 .filter-saturate {
@@ -198,9 +207,9 @@
   color: var(--accent-color);
   opacity: 0.6;
   position: absolute;
-  top: 25px;
-  right: 25px;
-  font-family: var(--accent-font-family), Arial, monospace;
+  top: clamp(1.313rem, 1.2250rem + 0.3756vw, 1.563rem);
+  right: clamp(0.813rem, 0.5489rem + 1.1268vw, 1.563rem);
+  font-family: var(--accent-font-family), fantasy, monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -220,8 +229,10 @@
 }
 
 .card__text-container {
-  border-block-start: var(--outline-style);
-  padding: 25px;
+  border: var(--outline-style);
+  padding-inline: 25px;
+  padding-block-start: 20px;
+  padding-block-end: 22px;
   display: grid;
   gap: 27px;
 }
@@ -246,6 +257,9 @@
   outline: 2px solid;
   outline-color: transparent;
   transition: outline-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__icon-button:hover{
@@ -254,11 +268,6 @@
 
 .card__icon-button:focus-visible {
   outline-color: var(--accent-color);
-}
-
-.like-icon {
-  block-size: 100%;
-  inline-size: 100%;
 }
 
 g path{
@@ -319,7 +328,7 @@ g path{
   animation: sparks-animation 0.3s normal linear backwards 0.3s;
 }
 
-.like-icon.is-liked.heart path {
+.like-icon.is-liked {
   animation: like-animation 0.3s normal linear backwards 0.1s;
 }
 
@@ -377,7 +386,7 @@ g path{
 }
 
 .text-decoration{
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy, monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 12.6px;
