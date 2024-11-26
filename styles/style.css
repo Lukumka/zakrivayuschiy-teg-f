@@ -18,7 +18,7 @@
   max-inline-size: 704px;
   margin: 0 auto;
   font-family: var(--main-font-family), Arial, monospace;
-  font-variation-settings: var(--text-font-width);
+  font-variation-settings: "wght" var(--text-font-width);
   padding-block: 100px;
   background-color: var(--main-color);
   color: var(--accent-color);
@@ -145,7 +145,7 @@
 
 .card-title {
   font-size: 18px;
-  font-variation-settings: var(--title-font-width);
+  font-variation-settings: "wght" var(--title-font-width);
   line-height: 21.78px;
   width: 100%;
   padding-inline: 10px;
@@ -236,7 +236,7 @@
 .card-text {
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: var(--text-font-width);
+  font-variation-settings: "wght" var(--text-font-width);
 }
 
 .card__button-container {
