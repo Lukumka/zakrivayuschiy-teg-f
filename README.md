@@ -1,5 +1,5 @@
 <a id="readme-top"></a>
-# Сложно сосредоточиться
+# Закрывающий тег
 #
 ## [Ссылка на проект](https://lukumka.github.io/zakrivayuschiy-teg-f/)
 #
